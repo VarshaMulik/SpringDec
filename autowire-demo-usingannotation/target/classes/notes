@@ -1,0 +1,32 @@
+
+What is Spring?
+
+
+Spring it is a Framework for developing Java EE application
+
+STS 4
+Maven 3.3+
+MySql / Oracle 
+
+
+
+class Vehicle{
+
+  String color;
+  Engine engine; // dependency 
+  // using constructor
+  Vehicle(String str,Engine eng){
+  }
+  //using setter
+  setEngine(Engine engine){
+  }
+
+}
+
+
+
+Engine engine= new Engine("200CC")
+Vehicle vehicle=new Vehicle();
+vehicle.setEngine(engine) // injecting Dependency using setter 
+
+

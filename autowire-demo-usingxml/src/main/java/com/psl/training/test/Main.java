@@ -18,6 +18,8 @@ public class Main {
 	 // Vehicle vehicle= context.getBean(Vehicle.class);
 	   System.out.println("name "+vehicle.getName());
 	   System.out.println("color "+vehicle.getColor());
+	   System.out.println("Engine Capacity :"+vehicle.getEngine().getCapacity());
+	   System.out.println("Elect Engine Capacity :"+vehicle.getElectricEngine().getCapacity());
 	   
 
 	}

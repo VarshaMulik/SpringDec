@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<bean id="v1" class="com.psl.training.Vehicle" autowire="byName">
+		<property name="name" value="Pulser"></property>
+		<property name="color" value="Black"></property>
+		<!--  PErform wiring with ref attribute -->
+	<!-- 	<property name="engine" ref="eng"></property> -->
+		<!-- <property name="engine"> Inner Bean <bean class="com.psl.training.model.Engine"> 
+			<property name="capacity" value="150CC"></property> </bean> </property> -->
+	</bean>
+
+	<bean id="v2" class="com.psl.training.Vehicle" autowire="byName">
+		<property name="name" value="Shine"></property>
+		<property name="color" value="Red"></property>
+	</bean>
+
+
+	<bean id="engine" class="com.psl.training.model.Engine">
+		<property name="capacity" value="150CC"></property>
+	</bean>
+	
+	<bean id="electricEngine" class="com.psl.training.model.Engine">
+		<property name="capacity" value="200CC"></property>
+	</bean>
+
+</beans>
